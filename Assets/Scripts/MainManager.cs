@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.IO;
+#if UNITY_EDITOR
+using UnityEditor;
+using UnityEditor.SearchService;
+#endif
 
 public class MainManager : MonoBehaviour
 {
@@ -42,6 +46,15 @@ public class MainManager : MonoBehaviour
     {
         SceneManager.LoadScene(1);
         //Make sure scenes are in correct order in File > Build Settings
+    }
+      
+      public void Exit()
+    {
+        #if UNITY_EDITOR
+            EditorApplication.ExitPlaymode();
+        #else
+            Application.Quit();
+        #endif
     }
 
     //Data Persistance across scenes

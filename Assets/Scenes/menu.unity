@@ -204,7 +204,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 88354217}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1287497445}
+        m_TargetAssemblyTypeName: MainManager, Assembly-CSharp
+        m_MethodName: Exit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &88354217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1011,6 +1023,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5012114b277dd84b0ab4016d041b4f14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerName: 
+  currentScore: 0
+  highScore: 0
+  highScoreName: 
 --- !u!4 &1287497446
 Transform:
   m_ObjectHideFlags: 0
@@ -1715,7 +1731,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1988694876}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1287497445}
+        m_TargetAssemblyTypeName: MainManager, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1988694876
 MonoBehaviour:
   m_ObjectHideFlags: 0
