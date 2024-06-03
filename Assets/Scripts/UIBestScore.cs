@@ -11,6 +11,7 @@ public class UIBestScore : MonoBehaviour
     //Script to handle display of High Scores
     //Attached to UI - Per original Script
     public TextMeshProUGUI bestScoreText;
+    private string input;
     // Drag Text UI into this in the Inspector
 
     void Start()
@@ -44,11 +45,23 @@ public class UIBestScore : MonoBehaviour
 
     void DisplayHighScore()
     {
-        bestScoreText.tag = MainManager.Instance.playerName + ", can you beat the High Score " + MainManager.Instance.highScore + " by "+ MainManager.Instance.highScoreName + "?";
+        bestScoreText.text = MainManager.Instance.playerName + ", can you beat the High Score " + MainManager.Instance.highScore + " by "+ MainManager.Instance.highScoreName + "?";
     }
 
     void DisplayName()
     {
         bestScoreText.text = MainManager.Instance.playerName + ", set a High Score!";
+    }
+
+
+    public void StorePlayerName(string inputName)
+    {
+        //Store Player
+        //input = inputName;
+        Debug.Log(inputName);
+
+        MainManager.Instance.playerName = inputName;
+        bestScoreText.text = MainManager.Instance.playerName + ", can you beat the High Score " + MainManager.Instance.highScore + " by "+ MainManager.Instance.highScoreName + "?";
+        
     }
 }

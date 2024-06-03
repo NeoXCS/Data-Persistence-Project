@@ -8,12 +8,13 @@ public class UIPlayerDetails : MonoBehaviour
     //Called upon by on-screen Text Field (Input?) On End Edit()
     private string input;
 
-    public void StorePlayerName(string inputName)
-    {
+    //public void StorePlayerName(string inputName)
+    //{
         //Store Player
         //input = inputName;
-        Debug.Log(inputName);
+      //  Debug.Log(inputName);
 
-        MainManager.Instance.playerName = inputName;
-    }
+      //  MainManager.Instance.playerName = inputName;
+        
+   // }
 }
